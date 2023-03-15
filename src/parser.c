@@ -37,13 +37,13 @@ static int after_check(t_list *list)
 	while (room)
 	{
 		if (room->is_start)
-			has_start = 1;
+			has_start++;
 		if (room->is_end)
-			has_end = 1;
+			has_end++;
 		room = room->next;
 	}
-	if (!has_start || !has_end)
-		return (ft_putendl_fd("Error: no start or end room!", 2), 1);
+	if (has_start != 1 || has_end != 1)
+		return (ft_putendl_fd("Error: no start or end room / too many!", 2), 1);
 	return (0);
 }
 

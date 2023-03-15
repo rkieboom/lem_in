@@ -45,4 +45,17 @@ int		parser(t_list *list);
 
 
 
+/*
+** Room Functions
+*/
+t_room *get_start_room(t_room *rooms);
+t_room *get_end_room(t_room *rooms);
+t_room	*find_room(t_room* head, char *find);
+
+
+/*
+** Ant Functions
+*/
+int	is_ant_in_room(t_list *list, t_room *room);
+
 #endif

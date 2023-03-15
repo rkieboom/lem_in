@@ -35,8 +35,8 @@ INCLUDES = $(addprefix $(HDRDIR), \
 )
 
 SRCS = $(addprefix $(SRCDIR), \
-	main.c parser.c parser_data.c rooms.c \
-	algo.c \
+	main.c parser.c parser_data.c setup_rooms.c rooms.c \
+	algo.c algo_functions.c ants.c\
 )
 
 # String manipulation magic
