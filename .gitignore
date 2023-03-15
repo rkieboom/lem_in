@@ -35,6 +35,7 @@
 *.i*86
 *.x86_64
 *.hex
+lem_in
 
 # Debug files
 *.dSYM/
@@ -51,7 +52,3 @@ Module.symvers
 Mkfile.old
 dkms.conf
 .vscode
-
-# Others
-libft/bin
-libft/libft.a

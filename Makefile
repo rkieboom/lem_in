@@ -31,11 +31,12 @@ ifeq ($(DEBUG), 2)
 endif
 
 INCLUDES = $(addprefix $(HDRDIR), \
-	header.h parse.h \
+	header.h parse.h\
 )
 
 SRCS = $(addprefix $(SRCDIR), \
-	main.c parser.c parser_data.c rooms.c\
+	main.c parser.c parser_data.c rooms.c \
+	algo.c \
 )
 
 # String manipulation magic

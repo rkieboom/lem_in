@@ -44,6 +44,7 @@ static int after_check(t_list *list)
 	}
 	if (!has_start || !has_end)
 		return (ft_putendl_fd("Error: no start or end room!", 2), 1);
+	return (0);
 }
 
 /*
